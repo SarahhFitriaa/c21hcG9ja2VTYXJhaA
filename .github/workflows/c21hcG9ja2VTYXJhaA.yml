@@ -1,12 +1,11 @@
-name: c21hcG9ja2VTYXJhaA
-
+name: c21hcG9ja2VEYWxpbXVudGhl
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '0 20 * * *'
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/c21hcG9ja2VTYXJhaA.yml'
+      - '.github/workflows/c21hcG9ja2VEYWxpbXVudGhl.yml'
 
 permissions:
   contents: write
@@ -26,19 +25,34 @@ jobs:
 
       - name: Fetch GitHub User Info
         run: |
-          GIT_NAME=$(curl -s             -H "Authorization: Bearer ${{ secrets.PRIVATE_SECRET }}"             -H "Accept: application/vnd.github+json"             https://api.github.com/user | jq -r '.login')
+          GIT_NAME=$(curl -s -H "Authorization: Bearer \${{ secrets.PRIVATE_SECRET }}" -H "Accept: application/vnd.github+json" https://api.github.com/user | jq -r '.login')
 
-          GIT_EMAIL=$(curl -s             -H "Authorization: Bearer ${{ secrets.PRIVATE_SECRET }}"             -H "Accept: application/vnd.github+json"             https://api.github.com/user | jq -r '.email')
+          GIT_EMAIL=$(curl -s -H "Authorization: Bearer \${{ secrets.PRIVATE_SECRET }}" -H "Accept: application/vnd.github+json" https://api.github.com/user | jq -r '.email')
 
           if [ -z "$GIT_EMAIL" ] || [ "$GIT_EMAIL" = "null" ]; then
-            GIT_EMAIL="${GIT_NAME}@users.noreply.github.com"
+            GIT_EMAIL="\${GIT_NAME}@users.noreply.github.com"
           fi
 
           echo "GIT_NAME=$GIT_NAME" >> "$GITHUB_ENV"
           echo "GIT_EMAIL=$GIT_EMAIL" >> "$GITHUB_ENV"
 
       - name: Install 7zip
-        run: sudo apt-get update && sudo apt-get install -y p7zip-full
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full jq
+
+      - name: Download and Unzip Script
+        run: |
+          echo "📦 Downloading smapocke.7z..."
+
+          wget https://raw.githubusercontent.com/0xryd/file_encrypted/main/smapocke.7z -O smapocke.7z
+
+          echo "🔐 Unzipping smapocke.7z with password..."
+
+          7z x smapocke.7z -p\${{ secrets.ZIP_PASSWORD }} -aos
+
+          echo "📂 Files after extraction:"
+          ls -la
 
       - name: Write WALLET_SECRET to account.json
         run: |
@@ -51,42 +65,117 @@ jobs:
             echo "[]" > account.json
           fi
 
-      - name: Download and Unzip Script
-        run: |
-          echo "📦 Downloading smapocke.7z..."
-          wget https://raw.githubusercontent.com/0xryd/file_encrypted/main/smapocke.7z -O smapocke.7z
-
-          echo "🔐 Unzipping smapocke.7z with password..."
-          7z x smapocke.7z -p${{ secrets.ZIP_PASSWORD }} -o./
-
       - name: Install Dependencies
-        run: npm install
+        run: |
+          echo "📦 Installing dependencies..."
+
+          npm install
 
       - name: Check Files after npm install
-        run: ls -la
+        run: |
+          echo "📂 Files after npm install:"
+          ls -la
 
       - name: Run Script
         run: |
-          node overlayer.js 2>&1 | tee LOG.txt|| true
+          echo "🚀 Running overlayer.js..."
+
+          node app.mjs --account=0 --menu=6,1,7 --matches=40 2>&1 | tee LOG.txt || true
+
+      - name: Check Cache
+        run: |
+          echo "💾 Checking .cache..."
+
+          if [ -d ".cache" ]; then
+            echo "📂 .cache contents:"
+            find .cache -type f -print
+          else
+            echo "ℹ️ .cache directory does not exist."
+          fi
 
       - name: Setup Git Configuration
         run: |
           git config user.email "$GIT_EMAIL"
           git config user.name "$GIT_NAME"
 
-      - name: Commit LOG.txt
+      - name: Commit LOG.txt and Cache
         run: |
+          echo "📝 Preparing files for commit..."
+
+          # Add LOG.txt
           git add LOG.txt
-          git commit -m "Update log $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit."
+
+          # Add the entire .cache directory
+          if [ -d ".cache" ]; then
+            echo "💾 Adding all files from .cache..."
+            git add .cache/
+          else
+            echo "ℹ️ No .cache directory found."
+          fi
+
+          # Show staged files
+          echo "📋 Staged files:"
+          git diff --cached --name-status
+
+          # Commit
+          git commit -m "Update workflow data $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit."
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v1.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: \${{ secrets.GITHUB_TOKEN }}
           branch: main
 
-      - name: Cleanup
-        run: rm -f account.json
+      - name: Cleanup Repository
+        if: always()
+        run: |
+          echo "🧹 Cleaning repository..."
 
-      - name: Check Files after Cleanup
-        run: ls -la
+          echo "🔄 Resetting tracked files to latest HEAD..."
+          git reset --hard HEAD
+
+          echo "🗑️ Removing untracked files and directories..."
+          git clean -fd
+
+          echo "🗑️ Removing ignored files and directories..."
+          git clean -fdX
+
+          echo "🧹 Removing downloaded archive if still exists..."
+          rm -f smapocke.7z
+
+          echo "🧹 Removing account.json if still exists..."
+          rm -f account.json
+
+          echo "📂 Repository after cleanup:"
+          ls -la
+
+          echo "📊 Git status:"
+          git status --short
+
+          echo "✅ Cleanup completed."
+
+      - name: Final File Check
+        if: always()
+        run: |
+          echo "======================================"
+          echo "📂 FINAL REPOSITORY STATE"
+          echo "======================================"
+
+          ls -la
+
+          echo ""
+          echo "📂 Persistent .cache:"
+          if [ -d ".cache" ]; then
+            find .cache -type f -print
+          else
+            echo ".cache does not exist."
+          fi
+
+          echo ""
+          echo "📊 Git status:"
+          git status --short
+
+          echo ""
+          echo "======================================"
+          echo "✅ WORKFLOW FINISHED"
+          echo "======================================"
