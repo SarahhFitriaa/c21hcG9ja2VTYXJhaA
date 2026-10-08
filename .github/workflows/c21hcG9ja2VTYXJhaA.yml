@@ -1,11 +1,11 @@
-name: c21hcG9ja2VEYWxpbXVudGhl
+name: c21hcG9ja2VTYXJhaA
 on:
   schedule:
     - cron: '0 20 * * *'
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/c21hcG9ja2VEYWxpbXVudGhl.yml'
+      - '.github/workflows/c21hcG9ja2VTYXJhaA.yml'
 
 permissions:
   contents: write
