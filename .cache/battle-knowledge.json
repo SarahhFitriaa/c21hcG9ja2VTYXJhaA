@@ -1,0 +1,754 @@
+{
+  "version": 7,
+  "cards": {
+    "PB-075": {
+      "summonCost": 1,
+      "summonCostSource": "observed",
+      "ruleText": "if you have fewer Walls than the opponent, this card gets HP+20.",
+      "ruleTextSource": "catalog",
+      "skillEffect": "if another friendly Aqua character attacked earlier this turn, this card gets skill damage +20.",
+      "skillEffectSource": "catalog",
+      "catalogHp": 70,
+      "catalogHpSource": "catalog"
+    },
+    "CRA-001": {
+      "catalogHp": 30,
+      "catalogHpSource": "catalog",
+      "maxHp": 30,
+      "maxHpSource": "server-state",
+      "summonCost": 1,
+      "summonCostSource": "observed"
+    },
+    "PB-061": {
+      "catalogHp": 50,
+      "catalogHpSource": "catalog",
+      "summonCost": 1,
+      "summonCostSource": "observed"
+    }
+  },
+  "skills": {
+    "PB-075": {
+      "0": {
+        "name": "Arc Strike",
+        "damage": 70,
+        "targetHp": 0,
+        "direct": false,
+        "observedValid": true,
+        "lastObservedAt": "2026-10-08T06:17:57.167Z",
+        "damageHistory": [
+          70,
+          40
+        ],
+        "observationCount": 48,
+        "namesSeen": [
+          "Arc Strike",
+          "Strike"
+        ],
+        "catalogSkillIndex": 0,
+        "identitySource": "server-name",
+        "identityConfidence": 1,
+        "observedOpponent": true
+      }
+    },
+    "CRA-001": {
+      "0": {
+        "name": "Pound",
+        "damage": 30,
+        "direct": false,
+        "observedValid": true,
+        "observedOpponent": true,
+        "lastObservedAt": "2026-10-08T06:17:57.224Z",
+        "damageHistory": [
+          30
+        ],
+        "observationCount": 13,
+        "namesSeen": [
+          "Pound"
+        ],
+        "catalogSkillIndex": 0,
+        "identitySource": "server-name",
+        "identityConfidence": 1
+      }
+    },
+    "PB-061": {
+      "0": {
+        "name": "Strike",
+        "damage": 40,
+        "targetHp": 0,
+        "direct": false,
+        "observedValid": true,
+        "lastObservedAt": "2026-10-08T02:26:38.201Z",
+        "damageHistory": [
+          40
+        ],
+        "observationCount": 4,
+        "namesSeen": [
+          "Strike"
+        ],
+        "catalogSkillIndex": 0,
+        "identitySource": "server-name",
+        "identityConfidence": 1,
+        "observedOpponent": true
+      }
+    }
+  },
+  "afterAttackMoves": {},
+  "chargeValues": {
+    "CRA-001": {
+      "value": 1,
+      "source": "observed-log",
+      "observedAt": "2026-10-08T02:26:37.390Z"
+    }
+  },
+  "rejectionRules": [],
+  "effectEvidence": [],
+  "boostMedal": {
+    "confirmed": 0,
+    "refuted": 0,
+    "samples": []
+  },
+  "calibration": {
+    "skills": {
+      "PB-075|0": {
+        "samples": 48,
+        "exactMatches": 44,
+        "mismatches": 0,
+        "unexplained": 4
+      },
+      "CRA-001|0": {
+        "samples": 13,
+        "exactMatches": 13,
+        "mismatches": 0
+      },
+      "PB-061|0": {
+        "samples": 4,
+        "exactMatches": 4,
+        "mismatches": 0
+      }
+    },
+    "hp": {},
+    "decisions": {},
+    "effects": {
+      "PB-075|skillDamage|transient": {
+        "samples": 48,
+        "exact": 44,
+        "mismatches": 4,
+        "lastPredicted": 70,
+        "lastObserved": 70,
+        "transient": true,
+        "updatedAt": "2026-10-08T06:17:57.167Z"
+      },
+      "CRA-001|skillDamage|transient": {
+        "samples": 13,
+        "exact": 13,
+        "mismatches": 0,
+        "lastPredicted": 30,
+        "lastObserved": 30,
+        "transient": true,
+        "updatedAt": "2026-10-08T06:17:57.224Z"
+      },
+      "PB-061|skillDamage|transient": {
+        "samples": 4,
+        "exact": 4,
+        "mismatches": 0,
+        "lastPredicted": 40,
+        "lastObserved": 40,
+        "transient": true,
+        "updatedAt": "2026-10-08T02:26:38.201Z"
+      }
+    }
+  },
+  "effectCalibrationLog": [
+    {
+      "at": "2026-10-08T02:01:39.696Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:01:39.696Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:01:39.817Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:01:39.817Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:01:39.874Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:02:32.142Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:02:32.142Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:02:32.260Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:02:32.261Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:02:32.316Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:07:46.591Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:07:46.592Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:07:46.711Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:07:46.711Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:07:46.768Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:15:19.163Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:15:19.163Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:15:19.284Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:15:19.284Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:15:19.341Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:37.865Z",
+      "card": "PB-061",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 40,
+      "observed": 40,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:26:37.865Z",
+      "card": "PB-061",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 40,
+      "observed": 40,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:37.953Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 40,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:26:37.954Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 40,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:37.988Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:38.201Z",
+      "card": "PB-061",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 40,
+      "observed": 40,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:26:38.201Z",
+      "card": "PB-061",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 40,
+      "observed": 40,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:38.289Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 40,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:26:38.289Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 40,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:26:38.324Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:28:47.204Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:28:47.204Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:28:47.325Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T02:28:47.325Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T02:28:47.384Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T03:02:20.381Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T03:02:20.381Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T03:02:20.502Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T03:02:20.502Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T03:02:20.559Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:45:36.354Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T04:45:36.355Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:45:36.493Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T04:45:36.494Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:45:36.559Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:50:26.831Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T04:50:26.831Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:50:26.979Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T04:50:26.980Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T04:50:27.047Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:06.722Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:06.722Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:06.841Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:06.841Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:06.898Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:20.295Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:20.296Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:20.484Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:20.484Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:20.545Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:57.046Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:57.047Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:57.167Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "player"
+    },
+    {
+      "at": "2026-10-08T06:17:57.167Z",
+      "card": "PB-075",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 70,
+      "observed": 70,
+      "side": "opponent"
+    },
+    {
+      "at": "2026-10-08T06:17:57.224Z",
+      "card": "CRA-001",
+      "stat": "skillDamage",
+      "key": "transient",
+      "predicted": 30,
+      "observed": 30,
+      "side": "opponent"
+    }
+  ],
+  "stats": {
+    "observations": 136,
+    "matches": 12,
+    "actions": 56,
+    "finishingAttacks": 0
+  }
+}
