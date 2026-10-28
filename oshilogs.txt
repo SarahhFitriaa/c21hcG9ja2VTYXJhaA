@@ -12,45 +12,45 @@ mode AUTO: akun=1 menu=Claim Daily, Auto All Tasks, Verify Single Task, Watch An
 
 
 ===== [1/1] Sarah =====
-[1]Sarah       |07:00:11 | 27-10-2026| login OK @sarahh_fitria | score=2350 rank=3167
-[1]Sarah       |07:00:11 | 27-10-2026| serverTime=2026-10-27T07:00:11.000Z local=2026-10-27T07:00:11.327Z
+[1]Sarah       |07:42:17 | 28-10-2026| login OK @sarahh_fitria | score=2420 rank=3080
+[1]Sarah       |07:42:17 | 28-10-2026| serverTime=2026-10-28T07:42:17.000Z local=2026-10-28T07:42:17.237Z
 --> [1]Sarah menjalankan: Claim Daily
-[1]Sarah       |07:00:12 | 27-10-2026| daily: OK +10 poin score=2360
+[1]Sarah       |07:42:18 | 28-10-2026| daily: OK +10 poin score=2430
 --> [1]Sarah menjalankan: Auto All Tasks (6 pending)
-[1]Sarah       |07:00:14 | 27-10-2026| [1/6] 569b202e (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796 | proof=https://x.com/sarahh_fitria/status/2114974966723964819
-[1]Sarah       |07:00:14 | 27-10-2026| delay 10s...
-[1]Sarah       |07:00:26 | 27-10-2026| [2/6] 0c0c4157 (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796 | proof=https://x.com/sarahh_fitria/status/2114974987799292370
-[1]Sarah       |07:00:26 | 27-10-2026| delay 10s...
-[1]Sarah       |07:00:38 | 27-10-2026| [3/6] affba66c (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796 | proof=https://x.com/sarahh_fitria/status/2114975251562949107
-[1]Sarah       |07:00:38 | 27-10-2026| delay 10s...
-[1]Sarah       |07:00:50 | 27-10-2026| [4/6] 3a506cad (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796 | proof=https://x.com/sarahh_fitria/status/2114975191400602495
-[1]Sarah       |07:00:50 | 27-10-2026| delay 10s...
-[1]Sarah       |07:01:02 | 27-10-2026| [5/6] dac9c018 (link) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796
-[1]Sarah       |07:01:02 | 27-10-2026| delay 10s...
-[1]Sarah       |07:01:14 | 27-10-2026| [6/6] 9edbb28a (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211496279047796 | proof=https://x.com/sarahh_fitria/status/2114975072828141355
-[1]Sarah       |07:01:14 | 27-10-2026| mode auto: verify 1 task pertama (pakai --limit N untuk atur, atau jalan interaktif untuk pilih).
-[1]Sarah       |07:01:16 | 27-10-2026| [1/1] 569b202e (reply) verify OK http=200 resp={"ok":true,"already":true,"points":10,"taskState":{"tasks":[{"id":"569b202e-998d-4037-bb2d-c1eebe3d96fd","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"2114962790477967 | proof=https://x.com/sarahh_fitria/status/2114975321602604525
+[1]Sarah       |07:42:19 | 28-10-2026| [1/6] 87ae8b6e (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115347906625150523
+[1]Sarah       |07:42:19 | 28-10-2026| delay 10s...
+[1]Sarah       |07:42:32 | 28-10-2026| [2/6] 1c315c65 (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115348139397268638
+[1]Sarah       |07:42:32 | 28-10-2026| delay 10s...
+[1]Sarah       |07:42:44 | 28-10-2026| [3/6] 3f7b08ea (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115348235327774447
+[1]Sarah       |07:42:44 | 28-10-2026| delay 10s...
+[1]Sarah       |07:42:56 | 28-10-2026| [4/6] 84429acd (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115348046464426899
+[1]Sarah       |07:42:56 | 28-10-2026| delay 10s...
+[1]Sarah       |07:43:07 | 28-10-2026| [5/6] 6c6d6f6f (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115348015628146068
+[1]Sarah       |07:43:07 | 28-10-2026| delay 10s...
+[1]Sarah       |07:43:20 | 28-10-2026| [6/6] f12f3018 (reply) verify OK http=200 resp={"ok":true,"already":false,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"211506845698718 | proof=https://x.com/sarahh_fitria/status/2115348161132361718
+[1]Sarah       |07:43:20 | 28-10-2026| mode auto: verify 1 task pertama (pakai --limit N untuk atur, atau jalan interaktif untuk pilih).
+[1]Sarah       |07:43:21 | 28-10-2026| [1/1] 87ae8b6e (reply) verify OK http=200 resp={"ok":true,"already":true,"points":10,"taskState":{"tasks":[{"id":"87ae8b6e-5160-4f19-8e5e-b9c0f414d46c","task_type":"reply","work_id":"","episode_id":"","title":"コメント","description":"","target_post_id":"2115068456987189 | proof=https://x.com/sarahh_fitria/status/2115348208565089041
 --> [1]Sarah menjalankan: Watch Anime
-[1]Sarah       |07:01:17 | 27-10-2026| watch: semua video sudah completed
+[1]Sarah       |07:43:22 | 28-10-2026| watch: semua video sudah completed
 --> [1]Sarah menjalankan: Read Article
-[1]Sarah       |07:01:19 | 27-10-2026| news: 30/30 artikel selesai dibaca
-[1]Sarah       |07:01:20 | 27-10-2026| mint eligibility: {"userId":"1390554663712268290","wallet":{"state":"registered","ready":true},"youtube":{"url":"https://www.youtube.com/@fsarahh","status":"unsubmitted","revision":"","submittedAt":null,"reviewedAt":nu
-[1]Sarah       |07:01:20 | 27-10-2026| news: semua artikel sudah dibaca
+[1]Sarah       |07:43:23 | 28-10-2026| news: 30/30 artikel selesai dibaca
+[1]Sarah       |07:43:24 | 28-10-2026| mint eligibility: {"userId":"1390554663712268290","wallet":{"state":"registered","ready":true},"youtube":{"url":"https://www.youtube.com/@fsarahh","status":"unsubmitted","revision":"","submittedAt":null,"reviewedAt":nu
+[1]Sarah       |07:43:24 | 28-10-2026| news: semua artikel sudah dibaca
 --> [1]Sarah menjalankan: Quiz Anime
 --> [1]Sarah menjalankan: Music Missions (realtime, bisa lama!)
-[1]Sarah       |07:01:23 | 27-10-2026| music: kedua misi sudah tercapai, stop
-[1]Sarah       |07:01:24 | 27-10-2026| mission music-listens-10: sudah diklaim
-[1]Sarah       |07:01:24 | 27-10-2026| mission music-minutes-30: sudah diklaim
-[1]Sarah       |07:01:24 | 27-10-2026| mission anime-completed-3: sudah diklaim
+[1]Sarah       |07:43:26 | 28-10-2026| music: kedua misi sudah tercapai, stop
+[1]Sarah       |07:43:26 | 28-10-2026| mission music-listens-10: sudah diklaim
+[1]Sarah       |07:43:26 | 28-10-2026| mission music-minutes-30: sudah diklaim
+[1]Sarah       |07:43:26 | 28-10-2026| mission anime-completed-3: sudah diklaim
 --> [1]Sarah menjalankan: Claim Missions
-[1]Sarah       |07:01:24 | 27-10-2026| mission music-listens-10: sudah diklaim
-[1]Sarah       |07:01:24 | 27-10-2026| mission music-minutes-30: sudah diklaim
-[1]Sarah       |07:01:24 | 27-10-2026| mission anime-completed-3: sudah diklaim
+[1]Sarah       |07:43:27 | 28-10-2026| mission music-listens-10: sudah diklaim
+[1]Sarah       |07:43:27 | 28-10-2026| mission music-minutes-30: sudah diklaim
+[1]Sarah       |07:43:27 | 28-10-2026| mission anime-completed-3: sudah diklaim
 --> [1]Sarah menjalankan: Check Eligibility
 
 --- eligibility [1]Sarah ---
-  @sarahh_fitria | score=2350 rank=3167
-  tasks    [###########---------] 7/13
+  @sarahh_fitria | score=2420 rank=3080
+  tasks    [#############-------] 11/17
   mission  music-listens-10:      claimed
   mission  music-minutes-30:      claimed
   mission  anime-completed-3:     claimed
@@ -61,14 +61,15 @@ mode AUTO: akun=1 menu=Claim Daily, Auto All Tasks, Verify Single Task, Watch An
   mint: requirementsMet=false mintOpen=false discord=true
 
 --> [1]Sarah menjalankan: Read Manga
-[1]Sarah       |07:01:29 | 27-10-2026| manga: 0/13 chapter belum completed
+[1]Sarah       |07:43:31 | 28-10-2026| manga: 0/13 chapter belum completed
 --> [1]Sarah menjalankan: Get Gift
-[1]Sarah       |07:01:29 | 27-10-2026| gift: 0/4 belum diterima
+[1]Sarah       |07:43:32 | 28-10-2026| gift: 1/5 belum diterima
+[1]Sarah       |07:43:33 | 28-10-2026| gift [1/1] Oshii animated GIFs: OK
 --> [1]Sarah menjalankan: Setup Profile
-[1]Sarah       |07:01:30 | 27-10-2026| profile: bio="Nothing" fav=kagura rewardAt=1791415185
-[1]Sarah       |07:01:30 | 27-10-2026| profile: bonus sudah diklaim, skip
+[1]Sarah       |07:43:36 | 28-10-2026| profile: bio="Nothing" fav=kagura rewardAt=1791415185
+[1]Sarah       |07:43:36 | 28-10-2026| profile: bonus sudah diklaim, skip
 --> [1]Sarah menjalankan: Bind Wallet
-[1]Sarah       |07:01:30 | 27-10-2026| wallet: sudah terikat HyUCj8WeeC... (solana)
+[1]Sarah       |07:43:37 | 28-10-2026| wallet: sudah terikat HyUCj8WeeC... (solana)
 
 == RINGKASAN ==
-- Sarah: daily=claimed | tasks OK 7/7 | misi klaim 0 (+0pt) | kuis benar 0 (+0pt) | watch 0/0 completed | musik 0 trek ~0s | artikel 0 dibaca | manga 0/13 completed | gift 0/4 diterima | profile - | wallet bound | mint req=false open=false
+- Sarah: daily=claimed | tasks OK 7/7 | misi klaim 0 (+0pt) | kuis benar 0 (+0pt) | watch 0/0 completed | musik 0 trek ~0s | artikel 0 dibaca | manga 0/13 completed | gift 1/5 diterima | profile - | wallet bound | mint req=false open=false
